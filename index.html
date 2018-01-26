@@ -6,15 +6,51 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cifrado Cesar</title>
+  <!-- Enlazamos nuestro framework _bootstrap_ -->
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
   <!-- Hoja de estilo CSS enlazada -->
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  
-  
-  <!-- Librería Jquery enlazada -->
+
+  <div class="container-fluid nav justify-content-center">
+    <div class="row">
+      <div class="col-lg-12">
+          <p>Cifrado Cesar</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container main">
+    <div class="row">
+      <div class="col-lg-4 text box">
+        <h3>Ingresar texto:</h3>
+        <form action="">
+          <textarea name="textarea" id="textarea" rows="4"></textarea>
+        </form>
+      </div>
+
+      <div class="col-lg-4 choose box">
+        <div class="buttons justify-content-center">
+          <input id="btnC" class="btn btn-info btn-block center-block" type="button" value="Cifrar" disabled>
+          <input id="btnD" class="btn btn-info btn-block center-block" type="button" value="Descifrar" disabled>
+        </div>
+      </div>
+
+      <div class="col-lg-4 result box">
+        <h3>Resultado:</h3>
+        <div id="showResult"></div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Librería JQuery enlazada -->
   <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+  <!-- Enlazamos el archivo JQuery de bootstrap -->
+  <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
   <!-- Archivo JS enlazado-->
   <script src="js/app.js"></script>
 </body>
